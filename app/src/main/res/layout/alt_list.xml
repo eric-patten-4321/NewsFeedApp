@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+>
+
+
+<android.support.v7.widget.CardView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="4dp"
+    android:layout_marginBottom="4dp"
+    android:layout_marginLeft="8dp"
+    android:layout_marginRight="8dp"
+    android:elevation="2dp"
+    app:cardCornerRadius="4dp">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="4dp">
+
+        <ImageView
+            android:id="@+id/iv_image"
+            android:layout_width="128dp"
+            android:layout_height="86dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="4dp"
+            android:scaleType="centerInside"
+            app:srcCompat="@drawable/no_image"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="16dp" />
+
+        <TextView
+            android:id="@+id/tv_section_name"
+            style="@style/styleArticleText"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@id/iv_image"
+            android:fontFamily="@font/merriweather_sans"
+            tools:text="Section Name" />
+
+        <TextView
+            android:id="@+id/tv_author_name"
+            style="@style/styleArticleText"
+            android:layout_below="@id/tv_section_name"
+            android:layout_toEndOf="@id/iv_image"
+            android:fontFamily="@font/merriweather_sans"
+            tools:text="Author" />
+
+        <TextView
+            android:id="@+id/tv_pub_date"
+            style="@style/styleArticleText"
+            android:layout_below="@id/tv_author_name"
+            android:layout_toEndOf="@id/iv_image"
+            android:fontFamily="@font/merriweather_sans"
+            tools:text="Published Date" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            style="@style/styleArticleTitleText"
+            android:layout_below="@id/iv_image"
+            android:fontFamily="@font/heebo_medium"
+            tools:text="Article Title" />
+    </RelativeLayout>
+</android.support.v7.widget.CardView>
+</LinearLayout>
